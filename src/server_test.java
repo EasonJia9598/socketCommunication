@@ -30,16 +30,16 @@ public class server_test {
 
             String s;
             int index = 0;
-            while ((s = in.readLine()) != null) {
-                System.out.println(s);
-                if (s.isEmpty()) {
-                    break;
-                }else if (index == 0){
-                    link_url = s.substring(5, s.indexOf("HTTP") - 1);
-                    System.out.println("URL is " + base_url + link_url);
-                }
-                index++;
-            }
+//            while ((s = in.readLine()) != null) {
+//                System.out.println(s);
+//                if (s.isEmpty()) {
+//                    break;
+//                }else if (index == 0){
+//                    link_url = s.substring(5, s.indexOf("HTTP") - 1);
+//                    System.out.println("URL is " + base_url + link_url);
+//                }
+//                index++;
+//            }
             out.write("HTTP/1.1 200 OK\r\n");
             out.write("Date: Sun, 07 Oct 2018 22:21:41 GMT\r\n");
             out.write("Server: Apache/2.0.52\r\n");
